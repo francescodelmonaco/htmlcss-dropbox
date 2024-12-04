@@ -43,6 +43,33 @@ header {
 }
 
 /* main */
+main {
+    background-color: var(--color-turchese);
+    padding-top: 100px;
+}
 
+.main-container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 800;
+}
+
+aside > div:nth-last-child(1) {
+    font-size: 40px;
+}
+
+.text-img-flex {
+    display: flex;
+}
+
+.aside-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
 /* footer */
