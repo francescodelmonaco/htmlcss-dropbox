@@ -164,12 +164,16 @@ aside > div:nth-last-child(1) {
     padding-bottom: 100px;
 }
 
+.business-features h2 {
+    margin-bottom: 40px;
+}
+
 .business-flex {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 15px;
-    margin-top: 20px;
+    margin-bottom: 100px;
 }
 
 .business-flex div {
