@@ -49,10 +49,12 @@ header {
     padding-top: 100px;
 }
 
-.turchese-container {
+.margin-80 {
     margin: 0 auto;
     width: 80%;
+}
 
+.turchese-container {
     position: relative;
 }
 
@@ -122,3 +124,29 @@ aside > div:nth-last-child(1) {
 }
 
 /* footer */
+footer {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.footer-flex {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-column nav ul li {
+    line-height: 30px;
+    font-size: 14px;
+}
+
+h4 {
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+.language {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
