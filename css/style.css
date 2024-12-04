@@ -3,11 +3,46 @@ html {
 }
 
 :root {
-
+    --color-white: #ffffff;
+    --color-blue: #0061fe;
+    --color-turchese: #b4d0e6;
+    --color-black: #000000;
 }
 
 /* header */
+header {
+    background-color: var(--color-white);
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.nav-flex {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+.nav-elements-flex {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.blue-button {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
 /* main */
+
 
 /* footer */
