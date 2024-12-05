@@ -7,6 +7,9 @@ html {
     --color-blue: #0061fe;
     --color-turchese: #b4d0e6;
     --color-black: #000000;
+    --color-lightgray: lightgray;
+    --color-link: #2e15f3;
+    --color-gray: gray;
 }
 
 /* header */
@@ -33,7 +36,11 @@ header {
     gap: 20px;
 }
 
-.blue-button {
+li > a {
+    color: var(--color-black);
+}
+
+.button--blue {
     background-color: var(--color-blue);
     color: var(--color-white);
     padding-top: 5px;
@@ -42,16 +49,17 @@ header {
     padding-right: 10px;
 }
 
+
 /* main */
 /* blocco turchese */
 .turchese-block {
-    background-color: var(--color-turchese);
+    background: linear-gradient(var(--color-turchese) 90%, var(--color-white) 10%);
     padding-top: 100px;
 }
 
 .margin-80 {
     margin: 0 auto;
-    width: 80%;
+    max-width: 80%;
 }
 
 .turchese-container {
@@ -64,7 +72,7 @@ h1 {
     padding-bottom: 20px;
 }
 
-aside > div:nth-last-child(1) {
+aside > div:last-child {
     font-size: 40px;
 }
 
@@ -87,12 +95,12 @@ aside > div:nth-last-child(1) {
 
 .fa-arrow-down {
     position: absolute;
-    bottom: 0px;
+    bottom: 60px;
 }
 
 .margin-60{
     margin: 0 auto;
-    width: 60%;
+    max-width: 60%;
     padding-top: 50px;
 }
 
@@ -107,20 +115,46 @@ aside > div:nth-last-child(1) {
     display: flex;
     justify-content: space-between;
     text-align: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-.plan {
-    border: 1px solid lightgray;
+.plan-type__name {
+    border-bottom: 1px solid var(--color-lightgray);
     padding: 10px;
+}
+
+.plan-type__plan {
+    border: 1px solid var(--color-lightgray);
     flex-basis: calc(100% / 3 - 20px);
-    height: 500px;
+    flex-grow: 1;
 }
 
-.plan-team {
-    border: 1px solid lightgray;
-    padding: 10px;
-    height: 200px;
-    margin-top: 30px;
+.plan-type__features {
+    padding: 1.5em;
+    text-align: left;
+    line-height: 2em;
+}
+
+.plan-type__features:not(h3) {
+    font-size: 0.8em;
+}
+
+.plan-type__features ul {
+    margin: 2em 0em;
+}
+
+.plan-type__features a.button--blue {
+    display: flex;
+    justify-content: center;
+}
+
+.i--blue {
+    color: var(--color-blue);
+}
+
+.text--grey {
+    color: var(--color-gray);
 }
 
 /* blocco partner */
@@ -178,6 +212,11 @@ aside > div:nth-last-child(1) {
 
 .business-flex div {
     flex-basis: calc(100%/3 - 10px);
+}
+
+.a--underline {
+    text-decoration: underline;
+    color: var(--color-link);
 }
 
 /* footer */
