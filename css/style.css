@@ -145,7 +145,7 @@ aside > div:last-child {
     margin-top: 1.5em;
     margin-left: 1.5em;
     margin-right: 1.5em;
-    height: 10%;
+    height: 20%;
 }
 
 .team-info {
@@ -269,9 +269,10 @@ footer {
     justify-content: space-between;
 }
 
-.footer-column nav ul li {
+.footer-column nav ul li a {
     line-height: 30px;
     font-size: 14px;
+    color: var(--color-white);
 }
 
 h4 {
