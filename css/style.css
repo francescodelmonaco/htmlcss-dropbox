@@ -28,6 +28,7 @@ header {
     display: flex;
     justify-content: space-between;
     margin: 0 10px;
+    align-items: center;
 }
 
 .nav-elements-flex {
@@ -67,7 +68,7 @@ li > a {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 4em;
     font-weight: 800;
     padding-bottom: 20px;
 }
@@ -95,7 +96,7 @@ aside > div:last-child {
 
 .fa-arrow-down {
     position: absolute;
-    bottom: 60px;
+    bottom: 20%;
 }
 
 .margin-60{
@@ -136,17 +137,32 @@ aside > div:last-child {
     line-height: 2em;
 }
 
-.plan-type__features:not(h3) {
+.plan-type__features {
     font-size: 0.8em;
+}
+
+.plan-type__features > h3 {
+    font-size: 1.5em;
 }
 
 .plan-type__features ul {
     margin: 2em 0em;
 }
 
+.plan-type__features ul li {
+    text-indent: -1em;
+    margin-left: 2em;
+}
+
 .plan-type__features a.button--blue {
     display: flex;
     justify-content: center;
+    margin-bottom: 2em;
+}
+
+.plan-type__features hr {
+    margin: 2.5em 0em;
+    width: 30%;
 }
 
 .i--blue {
