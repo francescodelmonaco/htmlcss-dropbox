@@ -309,6 +309,12 @@ h4 {
     padding-bottom: 20px;
 }
 
+footer hr {
+    width: 7%;
+    margin-left: 10%;
+    margin-bottom: 2em;
+}
+
 .language {
     padding-top: 20px;
     padding-bottom: 20px;
